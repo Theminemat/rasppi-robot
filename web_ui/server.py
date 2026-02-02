@@ -1,14 +1,4 @@
-#!/usr/bin/env python3
-"""Simple Flask web UI for Raspberry Pi sensors (gyro + ultrasonic).
 
-Features:
- - Polls MPU6050 gyro (or mock) and integrates yaw rate into a heading in degrees (0-359)
- - Polls two HC-SR04 ultrasonic sensors (or mock) for distances in cm
- - Exposes HTTP API: GET /api/status and POST /api/reset_heading
- - Serves a small single-page UI at /
-
-This is designed to be safe to run on a non-RPi machine (mock sensors used when libraries are missing).
-"""
 import time
 import threading
 import random
